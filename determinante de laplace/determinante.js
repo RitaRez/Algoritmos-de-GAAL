@@ -2,6 +2,10 @@
 
 function determinante(mat){
     
+    if(mat.length != mat[0].length){
+        console.log('A matriz não possui determinante');
+        return -1;
+    }
     var ordem = mat.length,
     det = 0;
 
